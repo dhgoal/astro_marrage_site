@@ -1,0 +1,135 @@
+
+<div class="wrapper">
+    <a href="/" class="logo">
+        <img alt="Pembe Panjur Logo" fetchpriority="high" loading="eager" width="200" height="56" decoding="async" data-nimg="1" src="/assets/images/logos/pembe-panjur-logo-white.svg" style="color: transparent;">
+    </a>
+    <div class="navitem">
+        <span>Ayda 90 bin Yeni Kayıt</span>
+        <div class="heart"></div>
+        <span>15 yıldır yanınızda</span>
+    </div>
+    <a href="/giris" title="Üye Giriş" class="loginbutton">
+        <span>Üye Giriş</span>
+    </a>
+</div>
+
+<style>
+    .wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0 25px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .logo {
+        display: flex;
+        margin-right: auto;
+        flex: 0 1 auto;
+        width: 200px;
+        z-index: 101;
+        position: relative;
+        left: unset;
+        top: unset;
+    }
+
+    .logo > img {
+        width: 200px;
+    }
+
+    a {
+        cursor: pointer;
+        color: #a31061;
+        transition: color .3s ease-in-out;
+    }
+
+    .navitem {
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .navitem > span {
+        flex: 0 1 auto;
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .navitem > div {
+        flex: 0 1 auto;
+        margin: 0 20px;
+        top: -7px;
+    }
+
+    .heart {
+        position: relative;
+        width: 50px;
+        overflow: inherit;
+        list-style: none;
+        animation: 2.5s ease 0s infinite normal none running animateHeart;
+        margin-left: 0px;
+        top: 5px;
+    }
+
+    .heart::before {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        font-size: 21px;
+        text-indent: 0px;
+        font-variant: normal;
+        line-height: 21px;
+    }
+
+    .heart::after {
+        left: 26%;
+        transform: rotate(45deg) translateZ(0px);
+        transform-origin: 100% 100%;
+    }
+
+    .heart::before, .heart::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 50%;
+        width: 12px;
+        height: 20px;
+        background: rgb(210, 20, 125);
+        border-radius: 100px 100px 0px 0px;
+        transform: rotate(-45deg) translateZ(0px);
+        transform-origin: 0px 100%;
+    }
+
+    .loginbutton {
+        margin-left: 40px;
+        display: block;
+        width: fit-content;
+        background-color: rgb(210, 20, 125);
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+</style>

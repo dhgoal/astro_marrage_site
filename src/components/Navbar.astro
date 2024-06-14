@@ -8,7 +8,7 @@
         <div class="heart"></div>
         <span>15 yıldır yanınızda</span>
     </div>
-    <a href="/giris" title="Üye Giriş" class="loginbutton">
+    <a href="/giris" title="Üye Giriş" class="login-button">
         <span>Üye Giriş</span>
     </a>
 </div>
@@ -69,8 +69,49 @@
 
     .navitem > div {
         flex: 0 1 auto;
-        margin: 0 20px;
+        margin: 0px 20px;
         top: -7px;
+    }
+
+    @-webkit-keyframes animateHeart {
+        0% {
+            -webkit-transform: scale(0.8);
+        }
+        5% {
+            -webkit-transform: scale(0.9);
+        }
+        10% {
+            -webkit-transform: scale(0.8);
+        }
+        15% {
+            -webkit-transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(0.8);
+        }
+        100% {
+            -webkit-transform: scale(0.8);
+        }
+    }
+    @keyframes animateHeart {
+        0% {
+            transform: scale(0.8);
+        }
+        5% {
+            transform: scale(0.9);
+        }
+        10% {
+            transform: scale(0.8);
+        }
+        15% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(0.8);
+        }
     }
 
     .heart {
@@ -95,12 +136,6 @@
         line-height: 21px;
     }
 
-    .heart::after {
-        left: 26%;
-        transform: rotate(45deg) translateZ(0px);
-        transform-origin: 100% 100%;
-    }
-
     .heart::before, .heart::after {
         position: absolute;
         content: "";
@@ -114,7 +149,13 @@
         transform-origin: 0px 100%;
     }
 
-    .loginbutton {
+    .heart::after {
+        left: 26%;
+        transform: rotate(45deg) translateZ(0px);
+        transform-origin: 100% 100%;
+    }
+
+    .login-button {
         margin-left: 40px;
         display: block;
         width: fit-content;
@@ -130,6 +171,10 @@
         line-height: 24px;
         font-weight: 800;
         text-decoration: none;
+    }
+
+    .login-button:hover {
+        background-color: rgb(245, 0, 137);
     }
 
 </style>

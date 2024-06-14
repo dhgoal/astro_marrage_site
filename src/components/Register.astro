@@ -1,0 +1,532 @@
+
+<div class="wrapper">
+    <div class="form">
+        <h1 class="title">EVLİLİK EVLİLİK SİTESİ</h1>
+        <div class="genderArea">
+            <div class="card">
+                <div class="label">Cinsiyetiniz:</div>
+                <div class="options">
+                    <fieldset>
+                        <div>
+                            <input type="radio" id="genderMan" name="gender" value="0" checked>
+                            <label for="genderMan" id="labgenderMan">Erkek</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div>
+                            <input type="radio" id="genderWoman" name="gender" value="1">
+                            <label for="genderWoman" id="labgenderWoman">Kadın</label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card">
+                <div class="label">Aradığınız Kişi:</div>
+                <div class="options">
+                    <fieldset>
+                        <div>
+                            <input type="radio" id="lookingPersonMan" name="lookingPerson" value="0" checked>
+                            <label for="lookingPersonMan" id="lablookingPersonMan">Erkek</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div>
+                            <input type="radio" id="lookingPersonWoman" name="lookingPerson" value="1">
+                            <label for="lookingPersonWoman" id="lablookingPersonWoman">Kadın</label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="phonenumber">
+            <div class="card">
+                <div class="label">E-posta veya Telefon Numarası:</div>
+                <div class="phoneinput">
+                    <input type="text" placeholder="E-posta veya Telefon Numarası" autocapitalize="none" value="">
+                </div>
+            </div>
+        </div>
+        <div class="checkboxes">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" title="pembe panjur" checked="">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="stitle">
+                    Kişisel verilerimin işlenmesine ilişkin 
+                    <button class="lighting-button">Aydınlatma Metni</button>
+                    ni okudum.
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" title="pembe panjur" checked="">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="stitle">
+                    Özel nitelikli kişilik testi bilgilerimin işlenmesini 
+                    <button class="lighting-button">Açık Rıza Metni</button>
+                    kapsamında işlenmesini onay veriyorum.
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" title="pembe panjur" checked="">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="stitle">
+                    Ürün veya hizmetlere ilişkin kampanya ve duyurulardan haberdar olmak için tarafıma 
+                    <button class="lighting-button">Açık Rıza Metni</button>
+                    kapsamında ticari elektronik ileti gönderilmesini istiyorum.
+                </div>
+            </div>
+        </div>
+        <div class="buttonArea">
+            <div class="button">
+                <a href="#!" class="register-button" style="cursor: pointer;">
+                    <div class="ippsbv">
+                        <div class="jrkddy">Hemen Kayıt Ol</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="buttonArea">
+            <div class="button">
+                <a href="#" class="facebook-button" style="cursor: pointer;">
+                    <div class="ippsbv">
+                        <img src="/assets/images/icons/facebook_login.svg" alt="Pembe Panjur Facebook Ile Giriş Yap" width="26" height="26" class="sc-1f5336d3-3 bBzmjZ">
+                        <div class="jrkddy">Facebook ile Giriş Yap</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="helper">Facebook duvarında hiçbir şey paylaşmayacağız.</div>
+        <div class="helper-img">
+            <img alt="hero_area" loading="lazy" width="129" height="60" decoding="async" data-nimg="1" src="/assets/images/digicert.png" style="color: transparent;">
+        </div>
+    </div>
+</div>
+
+<style>
+    .wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0px 25px;
+        box-sizing: border-box;
+    }
+
+    .form {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding: 25px 28px 20px;
+        /* width: 100%; */
+        max-width: 491px;
+    }
+
+    .title {
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+
+    .genderArea {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-bottom: 7px;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        border-radius: 6px;
+        padding: 10px 17px 16px;
+    }
+
+    .genderArea > div:first-child {
+        margin-right: 6px;
+    }
+
+    .label {
+        margin-top: 0px;
+        margin-bottom: 7px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        color: rgb(19, 23, 38);
+    }
+
+    .options {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .options > fieldset {
+        position: relative;
+        display: flex;
+        border: none;
+    }
+
+    .options > fieldset > div {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .options > fieldset > div > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 29px;
+        width: 29px;
+        margin: 0px;
+        z-index: 2;
+    }
+
+    .options > fieldset > div > label {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        padding-left: 41px;
+        padding-top: 3px;
+        cursor: pointer;
+    }
+
+    .options > fieldset > div > .checkmark {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 29px;
+        width: 29px;
+        background-color: rgba(241, 241, 241, 0.7);
+        border-radius: 50%;
+    }
+
+    .options > fieldset > div > input ~ .checkmark {
+        background-color: rgba(241, 241, 241, 0.7);
+    }
+
+    .options > fieldset > div > input:checked ~ .checkmark {
+        background-color: rgb(167, 222, 123);
+    }
+
+    .options > fieldset > div:hover input ~ .checkmark {
+        background-color: rgb(232, 232, 232);
+    }
+
+    .options > fieldset > div:hover > input:checked ~ .checkmark {
+        background-color: rgb(167, 222, 123);
+    }
+
+    .options > fieldset > div > .checkmark::after {
+        left: 10px;
+        top: 7px;
+        width: 5px;
+        height: 10px;
+        border-style: solid;
+        border-color: white;
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+        transform: rotate(35deg);
+    }
+
+    .options > fieldset {
+        margin: 0;
+        padding: 0;
+    }
+
+    .options > fieldset > div > .checkmark::after {
+        content: "";
+        position: absolute;
+        display: block;
+    }
+
+    .options > fieldset > div:not(:first-child) {
+        margin-left: 14px;
+    }
+
+    .phonenumber {
+        position: relative;
+        width: 100%;
+    }
+
+    .phonenumber > .card {
+        padding: 11px 17px;
+    }
+
+    .phonenumber > .card > .label {
+        margin-bottom: 5px;
+    }
+
+    .phoneinput {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    .phoneinput > input {
+        width: 100%;
+        background: rgba(241, 241, 241, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 14px 32px;
+        font-family: Manrope, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        outline: none;
+    }
+
+    .checkboxes {
+        position: relative;
+        width: 100%;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .checkbox {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .checkbox:last-child {
+        margin-bottom: 0px;
+    }
+
+    .checkbox > label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .checkbox > label > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0px;
+        width: 0px;
+    }
+
+    .checkbox > label > .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        height: 22px;
+        width: 22px;
+        background-color: rgba(241, 241, 241, 0.7);
+        border-radius: 8px;
+    }
+
+    .checkbox > label input ~ .checkmark {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .checkbox > label > input:checked ~ .checkmark {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .checkbox > label > .checkmark::after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 5px;
+        width: 4px;
+        height: 8px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+        transform: rotate(35deg);
+    }
+
+    .checkbox > label input ~ .checkmark::after {
+        display: none;
+        border-style: solid;
+        border-color: rgb(167, 222, 123);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+    }
+
+    .checkbox > label > input:checked ~ .checkmark::after {
+        display: block;
+        border-style: solid;
+        border-color: rgb(167, 222, 123);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+    }
+    
+    .checkbox > .stitle {
+        display: block;
+        font-family: Manrope, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        padding-left: 41px;
+    }
+
+    .checkboxes .lighting-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .buttonArea {
+        position: relative;
+    }
+
+    .button {
+        position: relative;
+        display: block;
+        padding: 0px 24px;
+        margin-bottom: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .buttonArea > div {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .register-button {
+        display: block;
+        background-color: rgb(210, 20, 125);
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        z-index: 2;
+        transition: all 0.2s ease 0s;
+        text-decoration: none;
+    }
+
+    .register-button:hover {
+        background-color: rgb(163, 16, 97);
+    }
+
+    .facebook-button {
+        display: block;
+        background-color: rgb(60, 113, 193);
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        z-index: 2;
+        transition: all 0.2s ease 0s;
+        text-decoration: none;
+    }
+
+    .facebook-button:hover {
+        background-color: rgb(48, 90, 154);
+    }
+
+    .ippsbv {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .jrkddy {
+        font-family: Manrope, sans-serif;
+        margin-right: 16px;
+        margin-left: 16px;
+        display: flex;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .divider {
+        position: relative;
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .helper {
+        position: relative;
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .helper-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+</style>

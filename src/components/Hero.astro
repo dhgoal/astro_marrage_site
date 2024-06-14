@@ -2,16 +2,174 @@
 import Register from "./Register.astro"
 ---
 
-<div class="heroArea">
-    <div class="linearGradient"></div>
-    <div class="registerForm">
+<div class="hero-area">
+    <div class="linear-gradient"></div>
+    <div class="register-form">
         <Register />
     </div>
     <div class="hidden"></div>
 </div>
+<div class="mobile-hero">
+    <div class="mobile-wrapper">
+        <div class="mobile-form">
+            <div class="mobile-heading">
+                Şimdi kayıt olun, uygun üyeleri ücretsiz görün.
+                <p>Ücretsiz kişilik testimizden yararlanın.</p>
+                <p>Profiliniz gizli kalsın.</p>
+            </div>
+            <div class="mobile-grid">
+                <div class="mobile-dialog">
+                    <div class="mobile-gender-field">
+                        <div class="mobile-option-field">
+                            <div class="mobile-gender-title">Cinsiyetiniz:</div>
+                            <div class="mobile-options">
+                                <fieldset>
+                                    <div>
+                                        <div class="mobile-register">
+                                            <input type="radio" id="mgenderWoman" name="mgender" value="0">
+                                            <label for="mgenderWoman" id="labmgenderWoman">Kadın</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mobile-register">
+                                            <input type="radio" id="mgenderMan" name="mgender" value="1" checked>
+                                            <label for="mgenderMan" id="labmgenderMan">Erkek</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="mobile-option-field">
+                            <div class="mobile-gender-title">Aradığınız Kişi:</div>
+                            <div class="mobile-options">
+                                <fieldset>
+                                    <div>
+                                        <div class="mobile-register">
+                                            <input type="radio" id="mlookingPersonWoman" name="mlookingPerson" value="0" checked>
+                                            <label for="mlookingPersonWoman" id="labmlookingPersonWoman">Kadın</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mobile-register">
+                                            <input type="radio" id="mlookingPersonMan" name="mlookingPerson" value="1">
+                                            <label for="mlookingPersonMan" id="labmlookingPersonMan">Erkek</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-phone-field">
+                        <div class="mobile-phone">
+                            <div class="mobile-phone-text">E-posta veya Telefon Numarası:</div>
+                            <div class="mobile-phone-input">
+                                <input type="text" placeholder="E-posta veya telefon numaranızı girin" autocapitalize="none" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-check-field">
+                        <div class="mobile-check-grid">
+                            <div class="mobile-check-item">
+                                <label>
+                                    <input type="checkbox" title="pembe panjur" checked="">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="mobile-title">
+                                    Kişisel verilerimin işlenmesine ilişkin 
+                                    <button class="lighting-button">Aydınlatma Metni</button>
+                                    ’ni okudum.
+                                </div>
+                            </div>
+                            <div class="mobile-check-item">
+                                <label>
+                                    <input type="checkbox" title="pembe panjur" checked="">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="mobile-title">
+                                    Özel nitelikli kişilik testi bilgilerimin işlenmesini  
+                                    <button class="lighting-button">Açık Rıza Metni</button>
+                                    kapsamında işlenmesini onay veriyorum.
+                                </div>
+                            </div>
+                            <div class="mobile-check-item check-wrapper">
+                                <label>
+                                    <input type="checkbox" title="pembe panjur" checked="">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="mobile-title">
+                                    Ürün veya hizmetlere ilişkin kampanya ve duyurulardan haberdar olmak için tarafıma 
+                                    <button class="lighting-button"> Açık Rıza Metni</button>
+                                    kapsamında ticari elektronik ileti gönderilmesini istiyorum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-button-field">
+                        <div class="mobile-button-area">
+                            <a href="#!" class="register-button" style="cursor: pointer;">
+                                <div class="ippsbv">
+                                    <div class="jrkddy">Hemen Kayıt Ol</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mobile-button-field">
+                        <div class="mobile-button-area">
+                            <a href="#" class="facebook-button" style="cursor: pointer;">
+                                <div class="ippsbv">
+                                    <img src="/assets/icons/facebook_login.svg" alt="Pembe Panjur Facebook Ile Giriş Yap" width="26" height="26" style="max-width:100%; height: auto">
+                                    <div class="jrkddy">Facebook ile Giriş Yap</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-facebook-text">Facebook duvarında hiçbir şey paylaşmayacağız.</div>
+                    <div class="mobile-img-field">
+                        <img alt="hero_area" loading="lazy" width="90" height="42" decoding="async" data-nimg="1" src="/assets/images/digicert.png" style="color: transparent;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function() {
+        const mgenderRadios = document.querySelectorAll('input[name="mgender"]');
+        const mlookingPersonRadios = document.querySelectorAll('input[name="mlookingPerson"]');
+
+        mgenderRadios.forEach(radio => {
+            radio.addEventListener('change', function(e) {
+                if (e.target.value === '1') {
+                    document.querySelector('input#mlookingPersonWoman').checked = true;
+                } else {
+                    document.querySelector('input#mlookingPersonMan').checked = true;
+                }
+            });
+        });
+
+        mlookingPersonRadios.forEach(radio => {
+            radio.addEventListener('change', function(e) {
+                if (e.target.value === '1') {
+                    document.querySelector('input#mgenderWoman').checked = true;
+                } else {
+                    document.querySelector('input#mgenderMan').checked = true;
+                }
+            });
+        });
+    }
+</script>
 
 <style>
-    .heroArea {
+    .mobile-hero {
+        display: none;
+    }
+    .hero-area {
         position: relative;
         width: 100vw;
         min-height: 100vh;
@@ -26,7 +184,7 @@ import Register from "./Register.astro"
         padding-bottom: 20px;
     }
 
-    .heroArea .linearGradient {
+    .hero-area .linear-gradient {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -35,7 +193,7 @@ import Register from "./Register.astro"
         background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50%);
     }
 
-    .registerForm {
+    .register-form {
         position: relative;
         padding-left: calc(-575px + 50vw);
         padding-right: calc(-575px + 50vw);
@@ -47,5 +205,640 @@ import Register from "./Register.astro"
         position: relative;
         padding-bottom: 65px;
         width: 100%;
+    }
+
+    .mobile-hero {
+        position: relative;
+        width: 100%;
+        padding: 0px calc(50% - 575px);
+        margin-top: 115px;
+        box-sizing: border-box;
+        background: none;
+    }
+
+    .mobile-hero > .mobile-wrapper {
+        position: relative;
+        width: 100%;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    
+    .mobile-form {
+        position: relative;
+        background: rgba(0, 0, 0, 0.05);
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+
+    .mobile-heading {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .mobile-heading > p {
+        margin: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .mobile-grid {
+        position: relative;
+        width: 100%;
+        max-width: 808px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 6px;
+        margin: 0px auto;
+    }
+
+    .mobile-dialog {
+        position: relative;
+        width: 100%;
+        max-width: 431px;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .mobile-gender-field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        gap: 4px;
+    }
+
+    .mobile-option-field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .mobile-gender-title {
+        position: relative;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .mobile-options {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .mobile-options > fieldset {
+        position: relative;
+        display: flex;
+        border: none;
+        flex-direction: row;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .mobile-options > fieldset > div {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+        padding: 11px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .mobile-options > fieldset > div:last-child {
+        margin-bottom: 0px;
+    }
+
+    .mobile-options > fieldset > div:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .mobile-options > fieldset > div > div {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        gap: 11px;
+    }
+
+    .mobile-options > fieldset > div > div.mobile-register {
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+        max-width: 70px;
+        margin: 0px auto;
+    }
+
+    .mobile-options > fieldset > div > div > input {
+        top: 4px;
+        left: 0px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .mobile-options > fieldset > div > div.mobile-register > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        margin: 0px;
+        z-index: 2;
+    }
+
+    .mobile-options > fieldset > div > div > label {
+        padding: 0px;
+        margin-left: 27px;
+    }
+
+    .mobile-options > fieldset > div > div.mobile-register > label {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .mobile-options > fieldset > div > div > .checkmark {
+        width: 16px;
+        height: 16px;
+        background-color: rgb(255, 255, 255);
+        top: 4px;
+        left: 0px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    .mobile-options > fieldset > div > div.mobile-register > .checkmark {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+    }
+
+    .mobile-options > fieldset > div > div > .checkmark::after {
+        border: none;
+    }
+
+    .mobile-options > fieldset > div > div.mobile-register > .checkmark::after {
+        content: "";
+        position: absolute;
+        display: block;
+        border: none;
+    }
+
+    .mobile-options > fieldset > div > div > input:checked ~ .checkmark {
+        border-color: rgb(210, 20, 125);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .mobile-options > fieldset > div > div > input:checked ~ .checkmark::after {
+        background-color: rgb(210, 20, 125);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        left: 2px;
+        top: 2px;
+    }
+
+    .mobile-phone-field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 11px 14px 39px 17px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+    }
+
+    .mobile-phone {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 11px 17px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 6px;
+    }
+
+    .mobile-phone-field > div {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 27px;
+    }
+
+    .mobile-phone-text {
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 5px;
+    }
+
+    .mobile-phone-input {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    .mobile-phone-input > input {
+        width: 100%;
+        background: rgba(241, 241, 241, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 14px 32px;
+        font-family: Manrope, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        outline: none;
+    }
+
+    .mobile-check-field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .mobile-check-grid {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+
+    .mobile-check-item {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .mobile-check-item > label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .mobile-check-item > label > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0px;
+        width: 0px;
+    }
+
+    .mobile-check-item > label > .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        height: 17px;
+        width: 17px;
+        background-color: rgba(241, 241, 241, 0.7);
+        border-radius: 8px;
+    }
+
+    .mobile-check-item > label input ~ .checkmark {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .mobile-check-item > label > input:checked ~ .checkmark {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .mobile-check-item > label > .checkmark::after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 4px;
+        width: 3px;
+        height: 6px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+        transform: rotate(35deg);
+    }
+
+    .mobile-check-item > label input ~ .checkmark::after {
+        display: none;
+        border-style: solid;
+        border-color: rgb(167, 222, 123);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+    }
+
+    .mobile-check-item > label > input:checked ~ .checkmark::after {
+        display: block;
+        border-style: solid;
+        border-color: rgb(167, 222, 123);
+        border-image: initial;
+        border-width: 0px 2px 2px 0px;
+    }
+
+    .mobile-check-item > .mobile-title {
+        display: block;
+        font-family: Manrope, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        padding-left: 25px;
+    }
+
+    .lighting-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .check-wrapper {
+        display: table;
+        margin-bottom: 10px;
+    }
+
+    .mobile-button-field {
+        position: relative;
+    }
+
+    .mobile-button-area {
+        position: relative;
+        display: block;
+        padding: 0px 24px;
+        margin-bottom: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-button-field > div {
+        display: block;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .register-button {
+        display: block;
+        background-color: rgb(210, 20, 125);
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        z-index: 2;
+        transition: all 0.2s ease 0s;
+        text-decoration: none;
+    }
+
+    .ippsbv {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .jrkddy {
+        font-family: Manrope, sans-serif;
+        margin-right: 16px;
+        margin-left: 16px;
+        display: flex;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .facebook-button {
+        display: block;
+        background-color: rgb(60, 113, 193);
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        z-index: 2;
+        transition: all 0.2s ease 0s;
+        text-decoration: none;
+    }
+
+    .mobile-facebook-text {
+        position: relative;
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: rgb(0, 0, 0);
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-img-field {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+        .hero-area {
+            display: none;
+        }
+        
+        .mobile-hero {
+            display: block;
+            padding: 56px 0px 0px;
+            margin-top: 0px;
+            background: white;
+        }
+
+        .mobile-hero > .mobile-wrapper {
+            background: none;
+            padding: 0px 24px;
+        }
+
+        .mobile-form {
+            padding: 0px 24px 20px;
+            margin-bottom: 20px;
+        }
+
+        .mobile-heading {
+            padding: 18px 24px 14px;
+            width: calc(100% + 48px);
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            margin-left: -24px;
+        }
+        
+        .mobile-dialog {
+            padding: 0px 10px;
+        }
+
+        .mobile-phone-field {
+            background-color: transparent;
+            padding: 0px;
+            margin-bottom: 4px;
+        }
+
+        .mobile-phone-field > div {
+            background-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .mobile-phone-text {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .mobile-phone-input > input {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 11px 23px 11px 25px;
+        }
+
+        .mobile-check-item > label > .checkmark {
+            border-radius: 36px;
+        }
+
+        .mobile-check-item > .mobile-title { 
+            font-size: 10px;
+            line-height: 15px;
+            padding-top: 4px;
+        }
+
+        .lighting-button {
+            font-size: 8px;
+            line-height: 15px;
+        }
+
+        .register-button {
+            border: 1px solid;
+            border-radius: 36px;
+            width: 100%;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .jrkddy {
+            font-size: 14px;
+            letter-spacing: 0px;
+        }
+
+        .divider {
+            position: relative;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .facebook-button {
+            border: 1px solid;
+            border-radius: 36px;
+            width: 100%;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .mobile-facebook-text {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            width: 80%;
+            margin: 10px auto 15px;
+        }
     }
 </style>

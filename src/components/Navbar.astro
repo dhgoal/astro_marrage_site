@@ -1,19 +1,33 @@
-
-<div class="wrapper">
-    <a href="/" class="logo">
-        <img alt="Pembe Panjur Logo" fetchpriority="high" loading="eager" width="200" height="56" decoding="async" data-nimg="1" src="/assets/logos/pembe-panjur-logo-white.svg" style="color: transparent;">
-    </a>
-    <div class="navitem">
-        <span>Ayda 90 bin Yeni Kayıt</span>
-        <div class="heart"></div>
-        <span>15 yıldır yanınızda</span>
+<div class="navbar">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <img alt="Pembe Panjur Logo" fetchpriority="high" loading="eager" width="200" height="56" decoding="async" data-nimg="1" class="white" src="/assets/logos/pembe-panjur-logo-white.svg" style="color: transparent;">
+            <img alt="Pembe Panjur Logo" fetchpriority="high" loading="eager" width="200" height="56" decoding="async" data-nimg="1" class="pink" src="/assets/logos/pembe-panjur-logo-pink.svg" style="color: transparent;">
+        </a>
+        <div class="navitem">
+            <span>Ayda 90 bin Yeni Kayıt</span>
+            <div class="heart"></div>
+            <span>15 yıldır yanınızda</span>
+        </div>
+        <a href="/giris" title="Üye Giriş" class="login-button">
+            <span>Üye Giriş</span>
+        </a>
     </div>
-    <a href="/giris" title="Üye Giriş" class="login-button">
-        <span>Üye Giriş</span>
-    </a>
 </div>
 
 <style>
+    .navbar {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		z-index: 1;
+		padding-top: 32px;
+		padding-left: calc(-575px + 50vw);
+		padding-right: calc(-575px + 50vw);
+		box-sizing: border-box;
+	}
+
     .wrapper {
         position: relative;
         width: 100%;
@@ -175,6 +189,53 @@
 
     .login-button:hover {
         background-color: rgb(245, 0, 137);
+    }
+
+    .white {
+        display: block;
+    }
+        
+    .pink {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .navbar {
+            padding-top: 22px;
+        }
+
+        .logo {
+            width: 126px;
+        }
+
+        .navitem {
+            display: none;
+        }
+
+        .login-button {
+            display: block;
+            width: fit-content;
+            background-color: rgb(210, 20, 125);
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+            border-radius: 36px;
+            padding: 8px 16px;
+        }
+
+        .white {
+            display: none;
+        }
+
+        .pink {
+            display: block;
+        }
+
+        .logo > img {
+            width: 100%;
+            height: auto;
+        }
     }
 
 </style>

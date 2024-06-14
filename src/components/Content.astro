@@ -61,7 +61,7 @@ import myImage from '/public/assets/images/landing/reklam-married-min.webp';
                     widths={[640, 750, 828, 1080, 1200, 1920, 2048, 3840, myImage.width]}
                     sizes={`100vw`}
                     alt="hello"
-                    style={"position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;"}
+                    style={"height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent; aspect-ratio: 1/1;"}
                 />
             </div>
             <div class="advertisement-content-text">
@@ -298,6 +298,18 @@ import myImage from '/public/assets/images/landing/reklam-married-min.webp';
         letter-spacing: 0;
         color: #000;
         margin-bottom: 15px;
+    }
+
+    @media (max-width: 767px) {
+        .content-container > .content-wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .advertisement-content-container>.advertisement-content-wrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            padding: 0;
+        }
     }
 
 </style>

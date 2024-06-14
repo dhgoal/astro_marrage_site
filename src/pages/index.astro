@@ -10,9 +10,7 @@ import Footer from '../components/Footer.astro';
 <Layout title="Evlilik Sitesi">
 	<main>
 		<div class="page">
-			<div class="navbar">
-				<Navbar />
-			</div>
+			<Navbar />
 			<Hero />
 			<SubHero />
 			<Content />
@@ -26,17 +24,5 @@ import Footer from '../components/Footer.astro';
 		width: 100vw;
 		height: auto;
 		min-height: 100vh;
-	}
-
-	.navbar {
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		width: 100vw;
-		z-index: 1;
-		padding-top: 32px;
-		padding-left: calc(-575px + 50vw);
-		padding-right: calc(-575px + 50vw);
-		box-sizing: border-box;
 	}
 </style>

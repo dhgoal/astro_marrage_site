@@ -204,6 +204,64 @@
         color: rgb(115, 115, 115);
         margin: 0px;
         white-space: pre-line;
-    }    
+    }
+
+    @media (max-width: 767px) {
+        .subHeroArea {
+            background: unset;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .breadcrumbs {
+            color: black;
+        }
+
+        .typography {
+            color: black;
+            margin-bottom: 0px;
+        }
+
+        .hero-card {
+            padding: 0px 0px 30px;
+        }
+
+        .hero-card:first-child {
+            padding-top: 70px;
+        }
+
+        .hero-card > .property-lines-container {
+            flex-direction: column;
+            padding: 6px 20px 30px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            background: rgb(255, 255, 255);
+        }
+
+        .hero-card > .property-lines-container > .property-lines-row {
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .hero-card > .property-lines-container > .property-lines-row > .property-lines-wrapper > .property-lines-icon {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card > .property-lines-container > .property-lines-row > .property-lines-wrapper > h2 {
+            text-align: center;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 800;
+        }
+        
+        .hero-card > .property-lines-container > .property-lines-row > .property-lines-wrapper > p {
+            text-align: center;
+        }
+    }
 
 </style>

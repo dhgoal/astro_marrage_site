@@ -25,12 +25,12 @@
                 <div class="options">
                     <fieldset>
                         <div>
-                            <input type="radio" id="lookingPersonMan" name="lookingPerson" value="0" checked>
+                            <input type="radio" id="lookingPersonMan" name="lookingPerson" value="0">
                             <label for="lookingPersonMan" id="lablookingPersonMan">Erkek</label>
                             <span class="checkmark"></span>
                         </div>
                         <div>
-                            <input type="radio" id="lookingPersonWoman" name="lookingPerson" value="1">
+                            <input type="radio" id="lookingPersonWoman" name="lookingPerson" value="1" checked>
                             <label for="lookingPersonWoman" id="lablookingPersonWoman">Kadın</label>
                             <span class="checkmark"></span>
                         </div>
@@ -107,6 +107,33 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    window.onload = function() {
+        const genderRadios = document.querySelectorAll('input[name="gender"]');
+        const lookingPersonRadios = document.querySelectorAll('input[name="lookingPerson"]');
+
+        genderRadios.forEach(radio => {
+            radio.addEventListener('change', function(e) {
+                if (e.target.value === '0') {
+                    document.querySelector('input#lookingPersonWoman').checked = true;
+                } else {
+                    document.querySelector('input#lookingPersonMan').checked = true;
+                }
+            });
+        });
+
+        lookingPersonRadios.forEach(radio => {
+            radio.addEventListener('change', function(e) {
+                if (e.target.value === '0') {
+                    document.querySelector('input#genderWoman').checked = true;
+                } else {
+                    document.querySelector('input#genderMan').checked = true;
+                }
+            });
+        });
+    }
+</script>
 
 <style>
     .wrapper {
